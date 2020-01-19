@@ -1,0 +1,20 @@
+﻿
+@{
+    ViewBag.Title = "VerRoles";
+}
+
+@{
+    if (User.IsInRole("Administrador"))
+    {
+
+        <h1>Eres el administrador</h1>
+        <button>Ok</button>
+    }
+    else
+    {
+        <h1>No eres el administrador</h1>
+        <button>Ok</button>
+    }
+}
+}
+
